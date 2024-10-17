@@ -1,0 +1,147 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3a0c55, #9c5b94); /* Galaxy background */
+    color: #ffffff; /* White text for better contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height for footer positioning */
+  }
+  
+  nav {
+    background-color: rgba(90, 30, 110, 0.8); /* Semi-transparent purple for navbar */
+    padding: 15px 0; /* Spacing around navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 40px; /* Increased space between navbar items */
+  }
+  
+  .navbar a {
+    color: #ffffff; /* White links for visibility */
+    text-decoration: none;
+    padding: 10px 15px; /* Spacing around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(140, 50, 160, 0.8); /* Lighter purple on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  main {
+    flex: 1; /* Allow main to grow and fill space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding for main content */
+  }
+  
+  .box {
+    position: relative; /* Allow absolute positioning of the glow effect */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for quiz box */
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+    padding: 20px;
+    border-radius: 10px; /* More rounded corners for the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    max-width: 400px; /* Max width for the quiz box */
+    width: 100%; /* Responsive width */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+    overflow: hidden; /* Hide overflow to contain glow */
+  }
+  
+  .box:before {
+    content: ''; /* Create a pseudo-element for the glow */
+    position: absolute;
+    top: -20px; /* Position it above the box */
+    left: -20px; /* Position it to the left */
+    right: -20px; /* Extend to the right */
+    bottom: -20px; /* Extend to the bottom */
+    border-radius: 15px; /* Rounded corners for the glow */
+    background: rgba(90, 30, 110, 0.6); /* Slightly transparent purple */
+    filter: blur(15px); /* Blur effect for glow */
+    z-index: -1; /* Position behind the box */
+  }
+  
+  .box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  h1.Ques {
+    margin-bottom: 20px; /* Spacing below the question */
+    color: #ffffff; /* White color for questions */
+  }
+  
+  .row {
+    margin-bottom: 10px; /* Spacing between options */
+  }
+  
+  .options {
+    display: none; /* Hide the original radio buttons */
+  }
+  
+  .option-label {
+    display: block; /* Make label block to fill entire width */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white for option buttons */
+    padding: 15px; /* Padding for option buttons */
+    border-radius: 5px; /* Rounded corners for option buttons */
+    margin-bottom: 10px; /* Spacing between option buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for option buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor for labels */
+  }
+  
+  .options:checked + .option-label {
+    background: rgba(90, 30, 110, 0.9); /* Selected option color */
+    color: white; /* Text color for selected option */
+    transform: scale(1.02); /* Slightly scale up on selection */
+  }
+  
+  .option-label:hover {
+    background: rgba(140, 50, 160, 0.6); /* Darker purple on hover */
+    transform: scale(1.02); /* Slightly scale up on hover */
+  }
+  
+  button {
+    background-color: rgba(90, 30, 110, 0.9); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for buttons */
+  }
+  
+  button:hover {
+    background-color: rgba(140, 50, 160, 0.8); /* Lighter purple on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(90, 30, 110, 0.8); /* Same color as navbar */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
