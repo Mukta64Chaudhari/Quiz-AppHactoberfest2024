@@ -1,0 +1,94 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000; /* Set background to black */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0 30C150 100 300 0 450 0C600 0 750 100 900 30C1050 -40 1200 60 1200 60V120H0V30Z" fill="rgba(155, 89, 182, 0.1)"></path></svg>'); /* Add wavy line pattern */
+    color: #f0f0f0; /* Set text color to light grey for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover; /* Ensure it covers the entire background */
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #1a1a1a; /* Dark background for the container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.05); /* Lighter shadow */
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text for the header */
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #bbb; /* Lighter grey for subtitle */
+}
+
+/* Action Buttons Styling */
+.actions {
+    margin: 30px 0;
+}
+
+.action-button {
+    background-color: #9b59b6; /* Purple background for buttons */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 10px rgba(155, 89, 182, 0.3); /* Lighter button shadow */
+    transition: all 0.3s ease-in-out;
+}
+
+.action-button i {
+    margin-right: 10px;
+}
+
+.action-button:hover {
+    background-color: #8e44ad; /* Darker purple on hover */
+    box-shadow: 0px 5px 15px rgba(155, 89, 182, 0.4); /* Slightly lighter shadow on hover */
+    transform: translateY(-3px);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777; /* Dark grey for footer text */
+}
+
+footer a {
+    color: #9b59b6; /* Purple links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #8e44ad; /* Darker purple on link hover */
+}
+
+/* Smooth transition */
+.container:hover {
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1); /* Lighter shadow on container hover */
+}
